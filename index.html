@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="style1.css">
+	<title>PureCssJs Slider</title>
 </head>
+
 <body>
 
-<h1>Pure CSS Slideshow</h1>
-<div class="container">
-	<div class="slideshow">
-		<div id="slide-1" class="slide">
-			<a href="#slide-7"></a>
-			<a href="#slide-2"></a>
-			<img src="https://c1.staticflickr.com/9/8724/16310801553_cea90ae63d_n.jpg" />
+	<h1>Pure CSS Slideshow</h1>
+	<h1 id="h1AA">This should be changed if js Scripts are Working.</h1>
+	<div class="container" width="100%">
+		<div class="slideshow" width="100%">
+			<div id="slide-1" class="slide">
+				<a href="#slide-7"></a>
+				<a href="#slide-2"></a>
+				<img src="https://c1.staticflickr.com/9/8724/16310801553_cea90ae63d_n.jpg" alt="Girl in a jacket0"
+					width="100%" />
+			</div>
+			<div id="slide-2" class="slide">
+				<a href="#slide-1"></a>
+				<a href="#slide-3"></a>
+				<img src="https://c2.staticflickr.com/4/3719/19819674272_2384feaaf8_n.jpg" alt="Girl in a jacket1" />
+			</div>
+			<div id="slide-3" class="slide">
+				<a href="#slide-2"></a>
+				<a href="#slide-4"></a>
+				<img src="https://c2.staticflickr.com/2/1627/24319275501_3ec6f36fa7_n.jpg" alt="Girl in a jacket2" />
+			</div>
+			<div id="slide-4" class="slide">
+				<a href="#slide-3"></a>
+				<a href="#slide-5"></a>
+				<img src="https://c2.staticflickr.com/2/1460/25194537936_e3c54faefc_n.jpg" alt="Girl in a jacket3" />
+			</div>
+			<div id="slide-5" class="slide">
+				<a href="#slide-4"></a>
+				<a href="#slide-6"></a>
+				<img src="https://c2.staticflickr.com/2/1460/26216238325_9c425923a7_n.jpg" alt="Girl in a jacket4" />
+			</div>
+			<div id="slide-6" class="slide">
+				<a href="#slide-5"></a>
+				<a href="#slide-7"></a>
+				<img src="https://c2.staticflickr.com/8/7578/26194232483_8204bf119b_n.jpg" alt="Girl in a jacket5" />
+			</div>
+			<div id="slide-7" class="slide">
+				<a href="#slide-6"></a>
+				<a href="#slide-1"></a>
+				<img src="https://c2.staticflickr.com/8/7106/26862741906_d5283c42ba_n.jpg" alt="Girl in a jacket6" />
+			</div>
 		</div>
-		<div id="slide-2" class="slide">
-			<a href="#slide-1"></a>
-			<a href="#slide-3"></a>
-			<img src="https://c2.staticflickr.com/4/3719/19819674272_2384feaaf8_n.jpg" />
-		</div>
-		<div id="slide-3" class="slide">
-			<a href="#slide-2"></a>
-			<a href="#slide-4"></a>
-			<img src="https://c2.staticflickr.com/2/1627/24319275501_3ec6f36fa7_n.jpg" />
-		</div>
-		<div id="slide-4" class="slide">
-			<a href="#slide-3"></a>
-			<a href="#slide-5"></a>
-			<img src="https://c2.staticflickr.com/2/1460/25194537936_e3c54faefc_n.jpg" />
-		</div>
-		<div id="slide-5" class="slide">
-			<a href="#slide-4"></a>
-			<a href="#slide-6"></a>
-			<img src="https://c2.staticflickr.com/2/1460/26216238325_9c425923a7_n.jpg" />
-		</div>
-		<div id="slide-6" class="slide">
-			<a href="#slide-5"></a>
-			<a href="#slide-7"></a>
-			<img src="https://c2.staticflickr.com/8/7578/26194232483_8204bf119b_n.jpg" />
-		</div>
-		<div id="slide-7" class="slide">
-			<a href="#slide-6"></a>
-			<a href="#slide-1"></a>
-			<img src="https://c2.staticflickr.com/8/7106/26862741906_d5283c42ba_n.jpg" />
+		<div class="pagination">
+			<a href="#slide-1"><span>1</span></a>
+			<a href="#slide-2"><span>2</span></a>
+			<a href="#slide-3"><span>3</span></a>
+			<a href="#slide-4"><span>4</span></a>
+			<a href="#slide-5"><span>5</span></a>
+			<a href="#slide-6"><span>6</span></a>
+			<a href="#slide-7"><span>7</span></a>
 		</div>
 	</div>
-  <div class="pagination">
-    <a href="#slide-1"><span>1</span></a>
-    <a href="#slide-2"><span>2</span></a>
-    <a href="#slide-3"><span>3</span></a>
-    <a href="#slide-4"><span>4</span></a>
-    <a href="#slide-5"><span>5</span></a>
-    <a href="#slide-6"><span>6</span></a>
-    <a href="#slide-7"><span>7</span></a>
-  </div>
-</div>
 
-<aside>
+	<aside>
 
-  <h2>About</h2>
+		<h2>About</h2>
 
-  <p>I wanted to create a pure CSS image slideshow and this is the result.</p>
+		<p>I wanted to create a pure CSS image slideshow and this is the result.</p>
 
-  <p>This slideshow was created using just CSS and HTML. Click anywhere on the left half to go to the previous slide, anywhere on the right half to go to the next slide. Oh and it loops in a carousel.</p>
+		<p>This slideshow was created using just CSS and HTML. Click anywhere on the left half to go to the previous
+			slide, anywhere on the right half to go to the next slide. Oh and it loops in a carousel.</p>
 
-  <p>There's pagination too so you can jump to any slide.</p>
+		<p>There's pagination too so you can jump to any slide.</p>
 
-  <h2>What could be improved?</h2>
+		<h2>What could be improved?</h2>
 
-  <ul>
-    <li>Highlight the current slide in the pagination</li>
-    <li>Prevent page jump when using pagination</li>
-    <li>Automatically cycle through images</li>
-  </ul>
- 
-</aside>
+		<ul>
+			<li>Highlight the current slide in the pagination</li>
+			<li>Prevent page jump when using pagination</li>
+			<li>Automatically cycle through images</li>
+		</ul>
+
+	</aside>
+
+	<script type="text/javascript" src="script1.js"></script>
+
 </body>
+
 </html>
