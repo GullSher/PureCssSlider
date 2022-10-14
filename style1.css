@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
+/* As Scss was now working at github maybe because of some error to be corrected 
+	anyhow i converted it online to "CSS" and in the start it was working offline
+	 but not online, and light downed in my area as i checked it at 5:20
+	  in the morning the site was also working online. */
+
 body {
 	background: linear-gradient(-45deg, #83a4d4, #b6fbff);
 	font-family: 'Open Sans', sans-serif;
