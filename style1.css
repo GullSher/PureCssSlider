@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
-/* As Scss was now working at github maybe because of some error to be corrected 
-	anyhow i converted it online to "CSS" and in the start it was working offline
-	 but not online, and light downed in my area as i checked it at 5:20
-	  in the morning the site was also working online. */
-
 body {
 	background: linear-gradient(-45deg, #83a4d4, #b6fbff);
 	font-family: 'Open Sans', sans-serif;
@@ -19,96 +14,93 @@ aside,
 .container {
 	margin: 0 auto 20px;
 	max-width: 500px;
-	/* max-width: 50%;
-	 */
 }
 
 .container {
-	width: 100%;
 	border-radius: 5px;
 	margin: 0 auto;
 	position: relative;
 	transition: box-shadow 200ms;
-}
 
-.container:hover {
-	box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.25);
+	&:hover {
+		box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.25);
+	}
 }
 
 .slideshow {
 	position: relative;
 	width: 100%;
-}
 
-.slideshow:after {
-	content: '';
-	display: block;
-	padding-bottom: calc((100% / 6) * 4);
-}
+	&:after {
+		content: '';
+		display: block;
+		padding-bottom: calc((100% / 6) * 4);
+	}
 
-.slideshow:hover a {
-	opacity: 1;
-}
+	&:hover a {
+		opacity: 1;
+	}
 
-.slideshow a {
-	opacity: 0;
-	position: relative;
-	text-decoration: none;
-	transition: opacity 0.5s;
-}
+	a {
+		opacity: 0;
+		position: relative;
+		text-decoration: none;
+		transition: opacity 0.5s;
 
-.slideshow a:after {
-	border-color: #fff #fff transparent transparent;
-	border-style: solid;
-	border-width: 2px;
-	color: #fff;
-	display: block;
-	height: 10px;
-	position: absolute;
-	top: calc(50% - 5px);
-	width: 10px;
-}
+		&:after {
+			border-color: #FFF #FFF transparent transparent;
+			border-style: solid;
+			border-width: 2px;
+			color: #FFF;
+			display: block;
+			height: 10px;
+			position: absolute;
+			top: calc(50% - 5px);
+			width: 10px;
+		}
 
-.slideshow a:first-child:after {
-	content: '';
-	left: 10px;
-	transform: rotate(-135deg);
-}
+		&:first-child:after {
+			content: '';
+			left: 10px;
+			transform: rotate(-135deg);
+		}
 
-.slideshow a:nth-child(2):after {
-	content: '';
-	right: 10px;
-	transform: rotate(45deg);
-}
+		&:nth-child(2):after {
+			content: '';
+			right: 10px;
+			transform: rotate(45deg);
+		}
+	}
 
-.slideshow .slide {
-	background-color: #fff;
-	box-sizing: border-box;
-	display: none;
-	height: 100%;
-	position: absolute;
-	width: 100%;
-}
+	.slide {
+		background-color: #FFF;
+		box-sizing: border-box;
+		display: none;
+		height: 100%;
+		position: absolute;
+		width: 100%;
 
-.slideshow .slide:first-child,
-.slideshow .slide:target {
-	display: block;
-}
+		&:first-child,
+		&:target {
+			display: block;
+		}
 
-.slideshow .slide a {
-	display: block;
-	height: 100%;
-	position: absolute;
-	width: 50%;
-}
+		a {
+			display: block;
+			height: 100%;
+			position: absolute;
+			width: 50%;
 
-.slideshow .slide a:nth-child(2) {
-	left: 50%;
-}
+			&:nth-child(2) {
+				left: 50%;
+			}
+		}
 
-.slideshow .slide img {
-	border-radius: 15px;
-	width: 100%;
+		img {
+			border-radius: 15px;
+			width: 100%;
+		}
+	}
 }
 
 .pagination {
@@ -117,22 +109,22 @@ aside,
 	justify-content: center;
 	position: absolute;
 	width: 100%;
-}
 
-.pagination a {
-	background: rgba(255, 255, 255, 0.75);
-	border-radius: 50%;
-	display: block;
-	height: 10px;
-	width: 10px;
-}
+	a {
+		background: rgba(#FFF, 0.75);
+		border-radius: 50%;
+		display: block;
+		height: 10px;
+		width: 10px;
 
-.pagination a:not(:last-child) {
-	margin-right: 5px;
-}
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
 
-.pagination a span {
-	display: none;
+		span {
+			display: none;
+		}
+	}
 }
 
 a:target {
